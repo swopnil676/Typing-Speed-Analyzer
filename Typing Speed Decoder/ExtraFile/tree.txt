@@ -1,0 +1,15 @@
+Core_Logic.py
+│
+├── get_random_paragraph()
+├── calculate_accuracy()
+├── calculate_wpm()
+└── calculate_result()
+        ↑
+        │
+        │
+main.py
+│
+├── Shows paragraph
+├── Gets user input
+├── Starts/stops timer
+└── Displays result
