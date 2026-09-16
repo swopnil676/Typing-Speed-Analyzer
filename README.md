@@ -2,22 +2,23 @@
 
 A simple Python-based **Typing Speed Test** that calculates **typing speed (WPM)** and **accuracy**.
 
-The project is divided into two files to keep the logic separate from the program flow.
+The project is divided into two files to keep the **core logic** separate from the **program flow**.
 
 ## 📁 Project Structure
 
 ```text
-Typing Speed Test/
+Typing Speed Analyzer/
 │
 ├── Core_Logic.py
-└── main.py
+├── main.py
+└── README.md
 ```
 
 ## 🧠 Core Logic
 
 ### `Core_Logic.py`
 
-This file contains the main functionality of the typing test.
+Contains the main functions used by the typing speed analyzer.
 
 #### 1. Random Paragraph
 
@@ -25,7 +26,7 @@ This file contains the main functionality of the typing test.
 get_random_paragraph()
 ```
 
-Selects a random paragraph from the predefined paragraph list.
+Selects a random paragraph from the predefined list.
 
 #### 2. Accuracy Calculation
 
@@ -33,7 +34,7 @@ Selects a random paragraph from the predefined paragraph list.
 calculate_accuracy(target, typed)
 ```
 
-Compares the user's typed text with the original paragraph character by character.
+Compares the target paragraph with the user's typed text character by character.
 
 **Formula:**
 
@@ -61,15 +62,13 @@ WPM = (Words Typed / Time in Seconds) × 60
 calculate_result(target, typed, elapsed_time)
 ```
 
-Combines the accuracy and WPM calculations and returns the final result.
+Combines the accuracy and WPM calculations to produce the final result.
 
 ---
 
 ## ▶️ Program Flow
 
 ### `main.py`
-
-The program follows these steps:
 
 ```text
 Start
@@ -114,4 +113,4 @@ Display Result
 python main.py
 ```
 
-This project focuses on understanding **Python logic, functions, timing, and modular code organization** without using a GUI.
+This project focuses on **Python logic, functions, timing, string processing, and modular code organization** without using a GUI.
